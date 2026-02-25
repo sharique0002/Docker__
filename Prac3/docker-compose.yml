@@ -1,0 +1,10 @@
+# Prac3 - Apache Docker on Port 8002
+
+version: "3.8"
+
+services:
+  apache:
+    build: .
+    container_name: my-apache
+    ports:
+      - "8002:80"
